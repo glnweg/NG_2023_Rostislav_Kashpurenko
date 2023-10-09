@@ -1,6 +1,6 @@
-chislo1 = int(input("Vvedite pervoe chislo: "))
-action = input("Vvedite deistvie (+,-,*,/,**,koren'): ")
-chislo2 = int(input("Vvedite vtoroe chislo: "))
+chislo1 = int(input("Enter first number: "))
+action = input("Enter operation (+,-,*,/,**,koren'): ")
+chislo2 = int(input("Enter second number: "))
 if action == "+" :  
     print (chislo1 + chislo2)
 elif action == "-" :
