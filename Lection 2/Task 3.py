@@ -1,15 +1,12 @@
-chislo = int(input('Enter number: '))
-spisok =  []
-for cifra in range(1, chislo + 1):
+num = int(input("Enter number: "))
 
-    if (cifra % 2 == 0) and (cifra % 3 == 0):
-        print( cifra"  | 2, 3")
-    elif cifra % 2 == 0:
-        print( cifra "  | 2")
-    elif cifra % 3 == 0:
-        print( cifra "  | 3")
-    else: 
-        print(cifra )
-        spisok.append(cifra)
-    print('---')
-print (spisok)
+nums = []
+for i in range(1, num + 1):
+    divider = [str(j) for j in range(1, i + 1) if i % j == 0]
+    divider_str = ", ".join(divider)
+    print(f"{i:5} | {divider_str}")
+
+    if len(divider) == 2:  
+        divider.append(i)
+
+print(divider)

@@ -1,8 +1,10 @@
-userinp = input("Write elements by spaces: ").split()
+user_input = input("Введите числа, разделенные пробелами: ")
 
-for chislo in userinp:
-    try:
-        int(chislo)
-        print(chislo)
-    except:
-        continue
+# Разделите введенную строку на отдельные числа, используя пробел как разделитель
+numbers = user_input.split()
+
+# Используйте списковое включение для подсчета чисел
+count = len([num for num in numbers if num.isdigit()])
+
+# Выведите количество чисел
+print(f"Количество чисел в списке: {count}")
