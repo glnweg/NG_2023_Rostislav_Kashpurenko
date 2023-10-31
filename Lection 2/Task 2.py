@@ -1,10 +1,4 @@
-user_input = input("Введите числа, разделенные пробелами: ")
-
-# Разделите введенную строку на отдельные числа, используя пробел как разделитель
+user_input = input("Enter elements by spaces: ")
 numbers = user_input.split()
-
-# Используйте списковое включение для подсчета чисел
 count = len([num for num in numbers if num.isdigit()])
-
-# Выведите количество чисел
-print(f"Количество чисел в списке: {count}")
+print(count)
